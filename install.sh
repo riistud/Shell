@@ -203,10 +203,10 @@ read -p "PILIH OPSI (1-22): " OPTION
 case "$OPTION" in
     1)
         # Masukkan token GitHub langsung di sini
-        GITHUB_TOKEN="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"
+        GITHUB_TOKEN="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"
 
         # Clone repositori menggunakan token
-        REPO_URL="https://${GITHUB_TOKEN}@github.com/RiiSTOREZ/TEMA.git"
+        REPO_URL="https://${GITHUB_TOKEN}@github.com/riistud/TEMA.git"
         TEMP_DIR="TEMA"
 
         # Mengkloning repositori
@@ -258,10 +258,10 @@ echo -e "${BLUE} KETIK yes UNTUK MELANJUTKAN${RESET}"
         ;;
     2)
         # Masukkan token GitHub langsung di sini
-        GITHUB_TOKEN="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"
+        GITHUB_TOKEN="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"
 
         # Clone repositori menggunakan token
-        REPO_URL="https://${GITHUB_TOKEN}@github.com/RiiSTOREZ/TEMA.git"
+        REPO_URL="https://${GITHUB_TOKEN}@github.com/riistud/TEMA.git"
         TEMP_DIR="TEMA"
 
         # Mengkloning repositori
@@ -321,10 +321,10 @@ chmod +x blueprint.sh
 bash blueprint.sh
 cd /var/www
 # Masukkan token GitHub langsung di sini
-    GITHUB_TOKEN="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"
+    GITHUB_TOKEN="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"
 
     # Clone repositori menggunakan token
-    REPO_URL="https://${GITHUB_TOKEN}@github.com/RiiSTOREZ/TEMA.git"
+    REPO_URL="https://${GITHUB_TOKEN}@github.com/riistud/TEMA.git"
         TEMP_DIR="TEMA"
 
     # Mengkloning repositori
@@ -379,10 +379,10 @@ chmod +x blueprint.sh
 bash blueprint.sh
 cd /var/www
 # Masukkan token GitHub langsung di sini
-    GITHUB_TOKEN="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"
+    GITHUB_TOKEN="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"
 
     # Clone repositori menggunakan token
-    REPO_URL="https://${GITHUB_TOKEN}@github.com/RiiSTOREZ/TEMA.git"
+    REPO_URL="https://${GITHUB_TOKEN}@github.com/riistud/TEMA.git"
         TEMP_DIR="TEMA"
 
     # Mengkloning repositori
@@ -438,10 +438,10 @@ cd /var/www/pterodactyl
 yarn >/dev/null 2>&1
 cd /var/www/
 # Masukkan token GitHub langsung di sini
-GITHUB_TOKEN="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"
+GITHUB_TOKEN="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"
 
 # Clone repositori menggunakan token
-REPO_URL="https://${GITHUB_TOKEN}@github.com/RiiSTOREZ/TEMA.git"
+REPO_URL="https://${GITHUB_TOKEN}@github.com/riistud/TEMA.git"
         TEMP_DIR="TEMA"
 
 # Mengkloning repositori
@@ -766,10 +766,10 @@ fi
  ;;
     5)
      # Masukkan token GitHub langsung di sini
-        GITHUB_TOKEN="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"
+        GITHUB_TOKEN="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"
 
         # Clone repositori menggunakan token
-        REPO_URL="https://${GITHUB_TOKEN}@github.com/RiiSTOREZ/TEMA.git"
+        REPO_URL="https://${GITHUB_TOKEN}@github.com/riistud/TEMA.git"
         TEMP_DIR="TEMA"
 
         # Mengkloning repositori
@@ -1076,7 +1076,7 @@ sudo systemctl start wings
         exit 0
         ;;
     18)
-       git clone https://github.com/RiiSTOREz/ddos
+       git clone https://github.com/riistud/ddos
        cd ddos
        npm i
        node index.js
@@ -1084,42 +1084,49 @@ sudo systemctl start wings
         exit 0
         ;;
     19)
-       git clone https://github.com/RiiSTOREz/SpamPairingWA
+       git clone https://github.com/riistud/SpamPairingWA
        cd SpamPairingWA
        npm i
        npm start
         exit 0
         ;;
     20)
-    wget -q "https://github.com/RiiSTOREz/installer/raw/main/stellar.zip" -O stellar.zip
-    sudo unzip -o stellar.zip
-
-  echo -e "                                                       "
-  echo -e "${BLUE}[+] =============================================== [+]${NC}"
-  echo -e "${BLUE}[+]                  INSTALLASI THEMA               [+]${NC}"
-  echo -e "${BLUE}[+] =============================================== [+]${NC}"
-  echo -e "                                                                   "
-  sudo cp -rfT /root/pterodactyl /var/www/pterodactyl
-  curl -sL https://deb.nodesource.com/setup_16.x | sudo -E bash -
-  sudo apt install -y nodejs
-  sudo npm i -g yarn
-  cd /var/www/pterodactyl
-  yarn add react-feather
-  php artisan migrate
-  yarn build:production
-  php artisan view:clear
-  sudo rm /root/stellar.zip
-  sudo rm -rf /root/pterodactyl
-
-  echo -e "                                                       "
-  echo -e "${GREEN}[+] =============================================== [+]${NC}"
-  echo -e "${GREEN}[+]                   INSTALL SUCCESS               [+]${NC}"
-  echo -e "${GREEN}[+] =============================================== [+]${NC}"
-  echo -e ""
-  sleep 2
-  clear
-  exit 0
-     ;;
+   GITHUB_TOKEN="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"
+REPO_URL="https://${GITHUB_TOKEN}@github.com/rainmc01/RainPrem.git"
+TEMP_DIR="RainPrem"
+cd /var/www && git clone "$REPO_URL"
+sudo mv "$TEMP_DIR/stellarrimake.zip" /var/www/
+cd /var/www && sudo mv "$TEMP_DIR/autosuspens.zip" /var/www/
+cd /var/www && rm -r RainPrem > /dev/null 2>&1
+unzip -o /var/www/stellarrimake.zip -d /var/www/
+unzip -o /var/www/autosuspens.zip -d /var/www/
+rm /var/www/stellarrimake.zip
+rm /var/www/autosuspens.zip
+echo -e "Membangun Front-End dan Memperbaiki Jika Error"
+cd /var/www/pterodactyl
+yarn
+yarn add react-feather
+if ! yarn build:production; then
+echo -e "${BLUE}Kelihatannya ada kesalahan.. Proses fix..${RESET}"
+export NODE_OPTIONS=--openssl-legacy-provider
+yarn
+yarn add react-feather
+npx update-browserslist-db@latest
+yarn build:production
+fi
+echo -e "Menjalankan Migrasi dan Membersihkan Cache"
+php artisan migrate --force
+php artisan view:clear
+echo -e "Menginstal Addon Auto Suspend"
+cd /var/www/pterodactyl
+bash installer.bash
+echo -e "Mengunduh File Tambahan dan Menyelesaikan Instalasi"
+clear
+echo -e "${CYAN}============================================================${RESET}"
+echo -e "${GREEN}THEME STELLAR BERHASIL TERINSTAL${RESET}"
+echo -e "${GREEN}ADDON AUTO SUSPEND BERHASIL DIINSTALL${RESET}"
+echo -e "${CYAN}============================================================${RESET}"
+;;
     21)
 echo "ANDA HARUS MEMILIKI PANEL PTERODACTYL TERLEBIH DAHULU! APAKAH ANDA MEMPUNYAINYA? (YES/NO)"
 read -r HAS_PTERODACTYL
@@ -1169,7 +1176,7 @@ else
     echo -e "${RED}Anda memerlukan panel Pterodactyl sebelum melanjutkan.${RESET}"
     exit 1
 fi
-;;
+;;       
     22)
 echo -e "                                                       "
 echo -e "${GREEN}[+] =============================================== [+]${NC}"
